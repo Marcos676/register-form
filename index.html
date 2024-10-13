@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Registro</h1>
+    <p id="description">
+      Registrate para comenzar tu nueva aventura como entrenador pokemon.
+    </p>
+    <form id="survey-form" action="post">
+      <label id="name-label" class="block" for="name"
+        >Nombre de tu personaje:
+      </label>
+      <input
+        id="name"
+        class="block"
+        type="text"
+        placeholder="Ej:Ash Ketchup"
+        required
+      />
+      <label id="email-label" class="block" for="email">Email: </label>
+      <input
+        id="email"
+        class="block"
+        type="email"
+        placeholder="Ej:ash123@yahoo.com"
+        required
+      />
+      <div class="block">
+        <label id="number-label" for="number">Edad: </label>
+        <input
+          id="number"
+          type="number"
+          min="18"
+          max="120"
+          placeholder="+18"
+          required
+        />
+      </div>
+      <div class="block">
+        <label for="dropdown">País: </label>
+        <select name="sexo" id="dropdown">
+          <option value="" selected disabled>Selecciona</option>
+          <option value="arg">Argentina</option>
+          <option value="eeuu">Estados Unidos</option>
+          <option value="esp">España</option>
+        </select>
+      </div>
+      <span class="block">Sexo: </span>
+      <div class="block option">
+        <input type="radio" name="sexo" id="masculino" value="m" checked />
+        <label for="masculino">Masculino</label>
+      </div>
+      <div class="block option">
+        <input type="radio" name="sexo" id="femenino" value="f" />
+        <label for="femenino">Femenino</label>
+      </div>
+      <div class="block">
+        <span class="block center borderTop">Elige tu primer pokemon</span>
+        <div class="option">
+          <input
+            type="checkbox"
+            name="pokemonInitial"
+            id="charmander"
+            value="charmander"
+          /><label for="charmander"> Charmander</label>
+        </div>
+        <div class="option">
+          <input
+            type="checkbox"
+            name="pokemonInitial"
+            id="bulbasur"
+            value="bulbasur"
+          /><label for="bulbasur"> Bulbasur</label>
+        </div>
+        <div class="option">
+          <input
+            type="checkbox"
+            name="pokemonInitial"
+            id="squartle"
+            value="squartle"
+          /><label for="squartle"> Squartle</label>
+        </div>
+      </div>
+      <label class="block borderTop" for="bio">Biografía de tu personaje:</label>
+      <textarea
+        name="bio"
+        id="bio"
+        rows="3"
+        cols="30"
+        placeholder="Ej: Vengo a hacer amigos, intercambiar pokemon y disfrutar la aventura pokemon "
+      ></textarea>
+      <div class="block center">
+        <button id="submit" type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
