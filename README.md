@@ -1,6 +1,6 @@
 ## Formulario de practica de FreeCodeCamp
 
-###Requisitos:
+### Requisitos:
 
 - You should have a short explanation in a p element with an id of description
 - You should have a form element with an id of survey-form
